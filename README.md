@@ -1,20 +1,20 @@
 # AI Basketball Coach - Web Application
 
-🏀 **Professional basketball video analysis powered by AI and computer vision**
+ **Professional basketball video analysis powered by AI and computer vision**
 
 Transform your basketball videos into professional coaching sessions with real-time AI commentary, technique analysis, and actionable feedback.
 
-## ✨ Features
+##  Features
 
-- **🎥 Video Upload**: Easy drag-and-drop video upload interface
-- **🤖 AI Analysis**: Powered by Google Gemini AI for intelligent basketball analysis
-- **📊 Real-time Processing**: Live progress tracking with visual feedback
-- **💡 Smart Commentary**: Professional coaching insights overlaid on your video
-- **📱 Responsive Design**: Works on desktop, tablet, and mobile devices
-- **🔧 Technical Analysis**: Detailed form analysis for shooting, dribbling, and defense
-- **🎯 Actionable Feedback**: Specific improvements and coaching tips
+- ** Video Upload**: Easy drag-and-drop video upload interface
+- ** AI Analysis**: Powered by Google Gemini AI for intelligent basketball analysis
+- ** Real-time Processing**: Live progress tracking with visual feedback
+- ** Smart Commentary**: Professional coaching insights overlaid on your video
+- ** Responsive Design**: Works on desktop, tablet, and mobile devices
+- ** Technical Analysis**: Detailed form analysis for shooting, dribbling, and defense
+- ** Actionable Feedback**: Specific improvements and coaching tips
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.9+
@@ -37,7 +37,7 @@ python app.py
 3. **Open Your Browser**
 Navigate to: `http://localhost:5000`
 
-## 🔑 API Key Setup
+##  API Key Setup
 
 ### Option 1: With Gemini API Key (Recommended)
 1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
@@ -50,7 +50,7 @@ Navigate to: `http://localhost:5000`
 - You'll still get video processing and basic feedback
 - Consider getting an API key for the full AI experience
 
-## 🎬 How It Works
+##  How It Works
 
 ### 1. Upload Your Video
 - **Supported formats**: MP4, AVI, MOV, MKV
@@ -68,7 +68,7 @@ Navigate to: `http://localhost:5000`
 - **Coaching Insights**: View detailed feedback and improvement tips
 - **Technical Analysis**: Get specific advice on form and technique
 
-## 🏀 What Gets Analyzed
+##  What Gets Analyzed
 
 ### Shooting Form
 - Elbow alignment
@@ -94,7 +94,7 @@ Navigate to: `http://localhost:5000`
 - Transition play
 - Team positioning
 
-## 🛠️ Technical Details
+##  Technical Details
 
 ### Architecture
 - **Backend**: Flask web framework
@@ -118,7 +118,7 @@ Navigate to: `http://localhost:5000`
 - Session-based processing
 - CORS protection
 
-## 📱 User Interface
+##  User Interface
 
 ### Modern Design
 - **Clean Interface**: Professional basketball-themed design
@@ -128,12 +128,12 @@ Navigate to: `http://localhost:5000`
 - **Visual Feedback**: Clear status indicators
 
 ### Processing Steps
-1. 🏀 **Video Upload** - Secure file transfer
-2. 👁️ **Frame Analysis** - AI examines key moments
-3. 💬 **AI Commentary** - Professional feedback generation
-4. 🎥 **Video Processing** - Final video creation
+1.  **Video Upload** - Secure file transfer
+2.  **Frame Analysis** - AI examines key moments
+3.  **AI Commentary** - Professional feedback generation
+4.  **Video Processing** - Final video creation
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables (Optional)
 ```bash
@@ -158,7 +158,7 @@ basketball-ai-coach/
 └── README_webapp.md      # This file
 ```
 
-## 🚀 Deployment
+##  Deployment
 
 ### Local Development
 ```bash
@@ -174,7 +174,7 @@ For production deployment, consider:
 - **Environment variables** for API keys
 - **File cleanup** for temporary uploads
 
-## 🎯 Use Cases
+##  Use Cases
 
 ### For Players
 - **Skill Development**: Get professional feedback on your technique
@@ -194,7 +194,7 @@ For production deployment, consider:
 - **Skill Assessment**: Objective performance evaluation
 - **Development Planning**: Data-driven improvement strategies
 
-## 🔍 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -227,14 +227,3 @@ For production deployment, consider:
 - **Stable camera** work provides better results
 - **Close-up shots** allow more detailed analysis
 
-## 🤝 Contributing
-
-This basketball AI coach represents the future of sports training technology. The combination of computer vision and AI provides unprecedented insights into basketball performance.
-
-## 📄 License
-
-Built with ❤️ for the basketball community. Powered by Google Gemini AI and OpenCV.
-
----
-
-**Ready to revolutionize your basketball training? Upload your first video and experience AI-powered coaching!** 🏀🚀
