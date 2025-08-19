@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Basketball Coach - Live Video Analysis</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-basketball-ball"></i>
+                <h1>AI Basketball Coach</h1>
+            </div>
+            <p class="subtitle">Get professional basketball analysis and live commentary powered by AI</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Upload Section -->
+            <section class="upload-section" id="uploadSection">
+                <div class="upload-card">
+                    <div class="upload-header">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h2>Upload Your Basketball Video</h2>
+                        <p>Get instant AI-powered coaching feedback and analysis</p>
+                    </div>
+
+                    <form id="uploadForm" class="upload-form">
+                        <div class="api-key-section">
+                            <label for="apiKey">
+                                <i class="fas fa-key"></i>
+                                Gemini API Key (Optional)
+                            </label>
+                            <input type="password" id="apiKey" name="api_key" 
+                                   placeholder="Enter your Gemini API key for enhanced AI analysis">
+                            <small>
+                                <a href="https://makersuite.google.com/app/apikey" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Get your free API key here
+                                </a>
+                            </small>
+                        </div>
+
+                        <div class="file-upload-area" id="fileUploadArea">
+                            <input type="file" id="videoFile" name="video" accept="video/*" hidden>
+                            <div class="upload-placeholder">
+                                <i class="fas fa-video"></i>
+                                <p>Drop your basketball video here or <span class="browse-link">browse files</span></p>
+                                <small>Supports MP4, AVI, MOV, MKV (Max: 100MB)</small>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="upload-btn" id="uploadBtn">
+                            <i class="fas fa-rocket"></i>
+                            Start AI Analysis
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Processing Section -->
+            <section class="processing-section hidden" id="processingSection">
+                <div class="processing-card">
+                    <div class="processing-header">
+                        <i class="fas fa-brain fa-spin"></i>
+                        <h2>AI Analysis in Progress</h2>
+                        <p id="processingStatus">Analyzing your basketball video...</p>
+                    </div>
+
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="progress-text" id="progressText">0%</span>
+                    </div>
+
+                    <div class="processing-steps">
+                        <div class="step" id="step1">
+                            <i class="fas fa-upload"></i>
+                            <span>Video Upload</span>
+                        </div>
+                        <div class="step" id="step2">
+                            <i class="fas fa-eye"></i>
+                            <span>Frame Analysis</span>
+                        </div>
+                        <div class="step" id="step3">
+                            <i class="fas fa-comments"></i>
+                            <span>AI Commentary</span>
+                        </div>
+                        <div class="step" id="step4">
+                            <i class="fas fa-video"></i>
+                            <span>Video Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section hidden" id="resultsSection">
+                <div class="results-card">
+                    <div class="results-header">
+                        <i class="fas fa-trophy"></i>
+                        <h2>Analysis Complete!</h2>
+                        <p>Your basketball video has been analyzed with AI-powered coaching insights</p>
+                    </div>
+
+                    <div class="video-container">
+                        <video id="resultVideo" controls class="result-video">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="downloadBtn">
+                            <i class="fas fa-download"></i>
+                            Download Analyzed Video
+                        </button>
+                        <button class="btn btn-secondary" id="analyzeAnotherBtn">
+                            <i class="fas fa-plus"></i>
+                            Analyze Another Video
+                        </button>
+                    </div>
+
+                    <div class="commentary-insights" id="commentaryInsights">
+                        <h3><i class="fas fa-lightbulb"></i> AI Coaching Insights</h3>
+                        <div class="insights-list" id="insightsList">
+                            <!-- Commentary insights will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section class="error-section hidden" id="errorSection">
+                <div class="error-card">
+                    <div class="error-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h2>Oops! Something went wrong</h2>
+                        <p id="errorMessage">An error occurred while processing your video.</p>
+                    </div>
+                    <button class="btn btn-primary" id="retryBtn">
+                        <i class="fas fa-redo"></i>
+                        Try Again
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 AI Basketball Coach. Powered by Gemini AI and OpenCV.</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
