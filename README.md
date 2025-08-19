@@ -6,13 +6,13 @@ Transform your basketball videos into professional coaching sessions with real-t
 
 ##  Features
 
-- ** Video Upload**: Easy drag-and-drop video upload interface
-- ** AI Analysis**: Powered by Google Gemini AI for intelligent basketball analysis
-- ** Real-time Processing**: Live progress tracking with visual feedback
-- ** Smart Commentary**: Professional coaching insights overlaid on your video
-- ** Responsive Design**: Works on desktop, tablet, and mobile devices
-- ** Technical Analysis**: Detailed form analysis for shooting, dribbling, and defense
-- ** Actionable Feedback**: Specific improvements and coaching tips
+-  Video Upload**: Easy drag-and-drop video upload interface
+-  AI Analysis**: Powered by Google Gemini AI for intelligent basketball analysis
+-  Real-time Processing**: Live progress tracking with visual feedback
+-  Smart Commentary**: Professional coaching insights overlaid on your video
+-  Responsive Design**: Works on desktop, tablet, and mobile devices
+-  Technical Analysis**: Detailed form analysis for shooting, dribbling, and defense
+-  Actionable Feedback**: Specific improvements and coaching tips
 
 ##  Quick Start
 
